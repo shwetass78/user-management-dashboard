@@ -150,9 +150,23 @@ h2 {
 }
 
 /* For responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .App {
     padding: 10px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px 10px;
   }
 
   table {
@@ -160,6 +174,67 @@ h2 {
   }
 
   .form-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+
+  table th,
+  table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  table {
+    font-size: 12px;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .form-container {
     width: 90%;
+    padding: 15px;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-close {
+    top: 5px;
+    right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+
+  table {
+    font-size: 10px;
+  }
+
+  .form-container {
+    width: 100%;
   }
 }
